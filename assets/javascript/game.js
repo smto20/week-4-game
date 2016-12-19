@@ -38,18 +38,9 @@ var restart = function(){
 var logic = function (){
   if (addition == total) {
     wins = wins + 1;
-    
-    audio.play();
-    restart();
-  }else if(addition > total){
-    losses = losses + 1;
-    
-    audio.play();
-    restart();
-  }else{
-    updateAddition();
   }
 }
+
 $('.total').append(total);
 
 $('.addition').append(addition);
